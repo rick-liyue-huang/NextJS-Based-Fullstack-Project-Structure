@@ -24,4 +24,4 @@ I create one common project structure used in my future project whenever the pro
 5. I add 'husky' to deal with git hooks by running `yarn add -D husky` and then `npx husky install`. In order to realize the husky for pre-commit and pre-build, I run `npx husky add .husky/pre-commit "yarn lint"
    ` and `npx husky add .husky/pre-push "yarn build"` to get two files under .husky directory.
 
-
+6. I run `yarn add -D @commitlint/cli @commitlint/config-conventional` to lint your commit messages and makes sure they follow a set of rules. It runs as a husky pre-commit hook, that is, it runs before the code is committed and blocks the commit in case it fails the lint checks. I create file named 'commentlint.config.js' to define the comment lint rules
