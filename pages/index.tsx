@@ -1,5 +1,3 @@
-import type { NextPage } from 'next';
-import styles from '../styles/Home.module.css';
 import { NextPageWithLayout } from './page';
 import CatCard from '../components/cards/cat/CatCard';
 import { mockCatCardProps } from '../components/cards/cat/CatCard.mocks';
@@ -8,8 +6,8 @@ import SidebarLayout from '../components/layout/sidebar/SidebarLayout';
 
 const Home: NextPageWithLayout = () => {
   return (
-    <section className={styles.main}>
-      <h1 className={styles.title}>
+    <section className={'bg-gradient-to-bl from-amber-50 to-blue-200'}>
+      <h1>
         Welcome to <a href="https://nextjs.org">NextJS</a>
       </h1>
       <CatCard {...mockCatCardProps.base} />
