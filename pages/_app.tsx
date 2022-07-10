@@ -9,6 +9,7 @@ interface AppPropsWithLayout extends AppProps {
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout || ((page) => page);
 
+  // @ts-ignore
   return getLayout(<Component {...pageProps} />);
 }
 
